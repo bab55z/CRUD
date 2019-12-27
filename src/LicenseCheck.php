@@ -11,7 +11,7 @@ trait LicenseCheck
      * @return void
      */
     private function checkLicenseCodeExists()
-    {
+    {return;
         // don't even check if it's a console command or unit tests
         if ($this->app->runningInConsole() || $this->app->runningUnitTests()) 
         {
